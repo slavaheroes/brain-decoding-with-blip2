@@ -1,0 +1,10 @@
+roi,temperature,const,text,model_type
+visual-V1,0.0,11,a black and white sign,0
+visual-V2,0.0,11,a man is standing next to a small animal,0
+visual-V3,0.0,11,a white and blue building,0
+visual-V4,0.0,11,a group of people standing on a field with a ball,0
+visual,0.0,11,a group of people standing around a bike,0
+floc-words,0.0,11,"a sign that says ""the park""",0
+floc-bodies,0.0,11,a man in a blue shirt,0
+floc-faces,0.0,11,a man sitting on a chair with a dog,0
+floc-places,0.0,11,a woman sitting in a chair in front of a building,0

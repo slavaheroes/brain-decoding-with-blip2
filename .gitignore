@@ -1,3 +1,17 @@
+playground*.ipynb
+feature_extraction_scripts
+convergence_data/
+vision_features/
+language_features/
+alignment_scores*/
+alignment_models/
+arxive/
+wandb/
+*ckpt
+*npy
+*mgz
+nsdcode/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

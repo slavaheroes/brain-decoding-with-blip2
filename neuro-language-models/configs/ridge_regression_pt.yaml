@@ -1,0 +1,39 @@
+EXP_NAME: ridge_regression
+
+SEED: 42
+
+DATA:
+  path_to_vision_features: /SSD2/guest/slava/THESIS/nlm_vision_features/Salesforce/blip2-opt-2.7b/mm
+  memory_type: both
+  memory_size: 7
+  type: array
+  use_roi: True
+
+
+ALIGNMENT_TRAINING:
+  model: ridge_regression
+  alphas: [40000, 50000, 60000, 80000, 100000, 500000, 1000000] # best of
+  backend: numpy
+  save_path: /SSD2/guest/slava/THESIS/model_checkpoints/alignment_models/blip2_pt_ridge_regression
+
+
+CONTRASTIVE_TRAINING:
+  warmup_steps: 0
+  batch_size: 32
+  save_path: /SSD2/guest/slava/THESIS/model_checkpoints/contrastive_models_pt/
+  epochs: 10
+  lr: 0.0001
+  optimizer_args:
+    weight_decay: 0.01
+    betas: [0.9, 0.999]
+  
+
+# FINETUNING:
+#   warmup_steps: 0
+#   batch_size: 32
+#   save_path: /SSD2/guest/slava/THESIS/model_checkpoints/finetuning_models_pt/
+#   epochs: 10
+#   lr: 0.00005
+#   optimizer_args:
+#     weight_decay: 0.01
+#     betas: [0.9, 0.999]
